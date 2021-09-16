@@ -54,6 +54,7 @@ html {
 p {
   font-size: 14px;
   line-height: 26px;
+  color: #123c61;
 }
 
 a:hover, a:focus {
@@ -67,12 +68,21 @@ a {
   transition: all 0.2s linear;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
 
 ul {
   margin: 0;
@@ -111,11 +121,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .section-header .section-title {
-  font-size: 42px;
+  font-size: 32px;
   margin-top: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #333;
+  font-weight: 500;
+  color: #123c61;
   position: relative;
 }
 
@@ -138,6 +147,17 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   margin-top: 15px;
 }
 
+
+.section-header .lines2 {
+  margin: auto;
+  width: 70px;
+  position: relative;
+  border-top: 2px solid #ffffff;
+  margin-top: 15px;
+}
+
+
+
 /* ==========================================================================
    2.2 Buttons
    ========================================================================== */
@@ -155,6 +175,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   display: inline-block;
 }
 
+
+
+
 .btn:focus,
 .btn:active {
   box-shadow: none;
@@ -163,8 +186,18 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .btn-common {
-  border: 1px solid #202D48;
-  background: #202D48;
+
+  margin-left: 80px;	
+  background: #123c61;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.btn-common1 {
+
+  background: #123c61;
   position: relative;
   color: #fff;
   z-index: 1;
@@ -173,8 +206,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .btn-common:hover {
   color: #fff;
-  background: #33b391;
-  border-color: #33b391;
+  background: #123c61;
+  border-color: #123c61;
   transition: all .50s ease-in-out;
   -moz-transition: all .50s ease-in-out;
   -webkit-transition: all .50s ease-in-out;
@@ -182,10 +215,18 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .btn-border {
   color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
+  background-color: #123c61;
+  border: 2px solid #123c61;
   border-radius: 4px;
 }
+
+.btn-border1 {
+  color: #fff;
+  background-color: #e70095;
+  border: 2px solid #e70095;
+  border-radius: 0px;
+}
+
 
 .btn-border:hover {
   border: 2px solid #fff;
@@ -201,7 +242,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .btn-rm {
   padding: 7px 0px;
-  color: #999;
+  color: #e70095;
   text-transform: capitalize;
 }
 
@@ -404,7 +445,7 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(../img/back8.jpg) fixed no-repeat;
+
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -500,7 +541,7 @@ button:focus {
 }
 
 .top-nav-collapse .navbar-nav .nav-link.active {
-  color: #fff !important;
+  color: #e70095 !important;
 }
 
 .indigo {
@@ -508,7 +549,7 @@ button:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
+  color: #123c61;
   padding: 0 22px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -527,8 +568,8 @@ button:focus {
 }
 
 .navbar .nav-link.active {
-  color: #fff !important;
-  background: #202D48;
+  color: #123c61 !important;
+ 
 }
 
 .dropdown-toggle::after {
@@ -643,7 +684,7 @@ button:focus {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(../img/bg1.jpg) fixed no-repeat;
+  background: url(../img/im/Layer-8.png) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -936,9 +977,25 @@ button:focus {
  10. Counter Section Style
  ========================================================================== */
 .counters {
-  background: url(../img/counter.jpg) fixed;
+ 
   position: relative;
 }
+
+.entreprise {
+ 
+  background: url(../img/im/entreprise.png) fixed;
+  position: relative;
+}
+
+
+.entreprise .section-header .section-title {
+    font-size: 32px;
+    margin-top: 0;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+}
+
 
 .counters .facts-item {
   text-align: center;
@@ -956,26 +1013,39 @@ button:focus {
 
 .counters .facts-item .fact-count h3 {
   font-size: 35px;
-  color: #fff;
+  color: #e70095;
   margin-bottom: 15px;
 }
 
 .counters .facts-item .fact-count h4 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
-  color: #fff;
+  color: #123c61;
 }
 
 /* ==========================================================================
 11. Testimonial Section Style
  ========================================================================== */
 #testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  background: url(../img/im/smiling-businesswomen.png) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
   position: relative;
 }
+	
+img {
+    max-width:100%;
+    height:auto;
+}
+
+
+#stepsimg img {
+	
+    max-width:80%;
+    height:auto;
+}
+
 
 .testimonial-item {
   text-align: center;
@@ -1138,7 +1208,7 @@ button:focus {
 }
 
 #blog .blog-item-text h3 a {
-  color: #333;
+  color: #123c61;
 }
 
 #blog .blog-item-text h3 a:hover {
@@ -1194,7 +1264,7 @@ button:focus {
   width: 100%;
   margin-bottom: 10px;
   padding: 14px;
-  border-color: #fff;
+  border-color: #123c61;
   border-radius: 0px;
   color: #fff;
   background: transparent;
@@ -1269,3 +1339,168 @@ footer {
 .copyright p a:hover {
   color: #202D48;
 }
+
+
+
+
+
+
+/* ==========================================================================
+  14. Slider area
+  ========================================================================== */
+
+
+
+#carousel-area {
+  overflow: hidden;
+  height: 80vh;
+}
+
+#carousel-area .carousel-item {
+  background-size: 100%;
+}
+
+#carousel-area .carousel-item .carousel-caption {
+  top: 32%;
+  right: 10%;
+  left: 12%;
+  text-shadow: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#carousel-area .carousel-item .carousel-caption h3 {
+  color: #123c61;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+#carousel-area .carousel-item .carousel-caption h6 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+#carousel-area .carousel-item .carousel-caption h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+#carousel-area #layer3 .carousel-item .carousel-caption h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+#carousel-area .carousel-item .carousel-caption h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #123c61;
+}
+
+#carousel-area .carousel-item .carousel-caption h4 {
+  color: #123c61;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#carousel-area .carousel-control {
+  display: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#carousel-area:hover .carousel-control {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+#carousel-area .carousel-control-next, #carousel-area .carousel-control-prev {
+  opacity: 1;
+}
+
+#carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i {
+  width: 48px;
+  line-height: 48px;
+  height: 48px;
+  color: #fff;
+  font-size: 24px;
+  display: inline-block;
+ /* background: #F97794;*/
+  border-radius: 30px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#carousel-area .carousel-control-next i:hover, #carousel-area .carousel-control-prev i:hover {
+  opacity: 0.9;
+}
+
+#carousel-area .carousel-indicators li:hover,
+#carousel-area .carousel-indicators li.active {
+  opacity: 1;
+}
+
+#carousel-area .carousel-indicators {
+  bottom: 35px;
+}
+
+#carousel-area .carousel-indicators li {
+  width: 30px;
+  height: 7px;
+  border-radius: 4px;
+}
+
+#slider-area {
+  margin-top: -1px;
+}
+
+#slider-area .btn {
+  margin-right: 15px;
+}
+
+#slider-area .large_white {
+  color: #fff;
+}
+
+#slider-area .about-info p {
+  color: #333;
+}
+
+.contents p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.contents .header-button .btn i {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+

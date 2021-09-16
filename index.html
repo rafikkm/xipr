@@ -21,17 +21,49 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
+	
+
+
+
+	  
+	  
+	  
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script> 
+	  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+<style>	
+
+	.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-height: 768px;
+  min-width: auto;
+}
+
+</style>		
 
   </head>
   <body>
+  
+  
 
     <!-- Header Section Start -->
-    <header id="hero-area" data-stellar-background-ratio="0.5">    
-	
-	
-	
-      <!-- Navigation Bar (Dont forget to modify the # later !!!) -->
+
+  <header id="hero-area">  
+      <!-- Main Carousel Section -->
+      <div id="carousel-area">
+	  
+	  
+	        <!-- Navigation Bar (Dont forget to modify the # later !!!) -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+	  
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -43,26 +75,21 @@
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#hero-area">Accueil</a>
+                <a class="nav-link page-scroll" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">Titre1</a>
+                <a class="nav-link page-scroll" href="jobs.html">Je postule en ligne</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#features">Titre2</a>
+                <a class="nav-link page-scroll" href="">Universités et News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#portfolios">Titre3</a>
+                <a class="nav-link page-scroll" href="conseil.html">Conseil XIP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#pricing">Titre4</a>
+                <a class="nav-link page-scroll" href="entreprise.html">Je deviens Partenaire XIP</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
-              </li>
+           
             </ul>
           </div>
         </div>
@@ -71,84 +98,271 @@
 		
 
         <!-- Navigation pour le mobile (Tested only for my S51) -->
-        <ul class="mobile-menu">
+       <ul class="mobile-menu">
            <li>
-              <a class="page-scroll" href="#hero-area">Accueil</a>
+              <a class="page-scroll" href="index.html">Accueil</a>
             </li>
             <li>
-              <a class="page-scroll" href="#services">Titre1</a>
+              <a class="page-scroll" href="jobs.html">Je postule en ligne</a>
             </li>
             <li>
-              <a class="page-scroll" href="#features">Titre2</a>
+              <a class="page-scroll" href="#features">Universités et News</a>
             </li>
             <li>
-              <a class="page-scroll" href="#portfolios">Titre3</a>
+              <a class="page-scroll" href="conseil.html">Conseil XIP</a>
             </li>
             <li>
-              <a class="page-scroll" href="#pricing">Titre4</a>
-            </li>
-            <li >
-              <a class="page-scroll" href="#blog">Blog</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#contact">Contact</a>
+              <a class="page-scroll" href="entreprise.html">Je deviens Partenaire XIP</a>
             </li>
         </ul>
         <!-- Mobile Menu End -->
 
-      </nav>
-      <!-- Navbar End -->   
-      <div class="container">      
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <div class="contents text-center">
-              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Titre- Lorem ipsum dolor sit amet</h1>
-              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
-              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Fill The survey</a>
+      </nav>	  
+	  
+	  
+        <div id="carousel-slider" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="img/slider/layer1.png" alt="">
+              <div class="carousel-caption text-center">
+              <!--  <h3 class="wow fadeInRight" data-wow-delay="0.2s">Handcrafted</h1>  -->
+                <h2 class="wow fadeInRight" data-wow-delay="0.4s">Xpertize Insertion Program</h2>
+                <h4 class="wow fadeInRight" data-wow-delay="0.6s">"Xpertize trouvra votre vois ".</h4>
+             <!--     <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="0.9s">Download</a> -->
+                <a href="#" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.2s">Rejoignez-nous</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/layer2.png" alt="">
+              <div class="carousel-caption text-right">
+                <img src="img/logos/Allo-Khedma3.png">
+				<br>
+				<br>
+                <h3 class="wow bounceIn" data-wow-delay="0.6s">Le Hotline qui vous accompagne pour <br > votre orientation professionnelle.</h3> 
+				
+				<br>
+				<br>
+				
+                 <a href="#" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.2s">Inscrivez-vous</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/layer3.png" alt="">
+              <div class="carousel-caption text-left">
+                <h6 class="wow fadeInDown" data-wow-delay="0.3s">Participer à la<br>Caravane de l'emploi<br>en un seul clic</h6>
+               
+              </div>
             </div>
           </div>
-        </div> 
-      </div>           
+          <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="glyphicon glyphicon-chevron-left"></i></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="glyphicon glyphicon-chevron-right"></i></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>  
+
     </header>
+
+
+
     <!-- Header Section End --> 
 	
 	
 	
 	
+	
+	
 
-    <!-- Projects Section Beg -->
+    <!-- Allo Khedma Comment ça marche -->
+	
+	
     <section id="services" class="section">
       <div class="container">
-        <div class="section-header">          
+	  
+	  
+	  
+ <!--       <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">The project</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-        </div>
+        </div> -->
 		
+	<div class="section-header">    	
+		
+		<div class="container">
+  <div class="row">
+    <div class="col">
+   <img style="max-width: 30%;" src="img/logos/Allo-Khedma.png">
+    </div>
+  </div>
+  <br>
+  
+  
+  <div class="row">
+    <div class="col">
+      <!--     <h2 class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Comment ça marche?</h2>
+		    <hr class="lines wow zoomIn" data-wow-delay="0.3s"> -->
 			
+			<div class="section-header">          
+          <h2 class="section-title wow fadeIn"  >Comment ça marche?</h2>
+          <hr class="lines">
+        </div>
 			
-			
+    </div>
+  </div>
+  
+  
+  
+  
+</div>
+	
+</div>	
 			
 		
         <div class="row"> <!-- Writing Row -->
 		  
 		  
           <div class="col-md-6 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
-           <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logoall2.png" alt=""></a>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-            </div>
+		  
+		  <img style="max-width:90%;" src="img/steps/step1.png" alt="">
+            
           </div>
 		  
 		  
 		  
           <div class="col-md-6 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
-             
-              
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+		  
+		  <p style="color: #e70095; font-size: 6.2vw;">1</p>
+		  <br>
+		  <br>
+		  <h3>Inscrivez-vous</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, 
+		  consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
+		  
+          </div>	
+		  </div>
+		  
+		  
+		  
+<div class="row">
+	
+	<div class="col-lg-12">
+                <img style="max-width:90%;" src="img/steps/Vector.png" class="img-responsive center-block d-block mx-auto" alt="Sample Image">
             </div>
-          </div>	  
+	
+
+ </div>
+		  
+
+ <div class="row">
+ 
+ 
+ 
+      <div class="col-md-6 col-sm-6">
+		  
+		  	  <p style="color: #e70095; font-size: 6.2vw;">2</p>
+			  
+			   <br>
+		  <br>
+			  
+		  <h3>Recevoir un appel</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, 
+		  consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
+            
+          </div>
+		  
+		  
+		  
+          <div class="col-md-6 col-sm-6">
+		  
+		  
+		  <img style="max-width:90%;" src="img/steps/step2.png" alt="">
+          
+          </div>	
+
+ </div>
+ 
+ <div class="row">
+	
+	<div class="col-lg-12">
+                <img  src="img/steps/Vector3.png" class="img-responsive center-block d-block mx-auto" alt="Sample Image">
+            </div>
+	
+
+ </div>
+ 
+ 
+  <div class="row">
+ 
+ 
+ 
+      <div class="col-md-6 col-sm-6">
+		  	  
+		    <img style="max-width:90%;" src="img/steps/step3.png" alt="">
+            
+      </div>
+		  	  
+          <div class="col-md-6 col-sm-6">
+		 	  
+			  	  <p style="color: #e70095; font-size: 6.2vw;">3</p>
+				  
+				   <br>
+		  <br>
+		  
+		  <h3>Encadrement et suivi</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, 
+		  consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
+          
+          </div>	
+
+ </div>
+ 
+ 
+ <div class="row">
+	
+	<div class="col-lg-12">
+                <img style="max-width:90%;" src="img/steps/Vector.png" class="img-responsive center-block d-block mx-auto" alt="Sample Image">
+            </div>
+	
+
+ </div>
+ 
+  <div class="row">
+ 
+ 
+ 
+      <div class="col-md-6 col-sm-6">
+		  
+		  	  <p style="color: #e70095; font-size: 6.2vw;">4</p>
+			  
+			   <br>
+		  <br>
+		  <h3>Recevoir un appel</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, 
+		  consectetur adipisicing elit. Quaerat, dignissimos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
+            
+          </div>
+		  
+		  
+		  
+          <div class="col-md-6 col-sm-6">
+		  
+		  
+		  <img style="max-width:90%;" src="img/steps/step2.png" alt="">
+          
+          </div>	
+
+ </div>
+ 		  
 
         </div>
 		
@@ -164,13 +378,14 @@
 	
 	
 
-    <!-- Features Section Start -->
+    <!-- Jobs Section Start -->
+	
+	
     <section id="features" class="section" data-stellar-background-ratio="0.2">
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title">Project Objectives</h2>
+          <h2 class="section-title">Jobboard à Consulter</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
         <div class="row">
           <div class="col-lg-8 col-md-12 col-xs-12">
@@ -179,31 +394,46 @@
                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                 
                     <div class="text">
-                      <h4>ob1</h4>
+                      <h4>Job1</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                     
                     <div class="text">
-                      <h4>ob2</h4>
+                      <h4>Job2</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos.</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                    
                     <div class="text">
-                      <h4>ob3</h4>
+                      <h4>job3</h4>
                       <p>LLorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                    
                     <div class="text">
-                      <h4>ob4</h4>
+                      <h4>job4</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos</p>
                     </div>
                   </div>
+				     <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                   
+                   
+                  </div>
+				  
+				     <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                   
+                <!-- Add Button à postuler -->
+				
+			 <a  href="#" class="btn btn-common pos wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Fill The survey</a>
+				 
+				 
+                  </div>
+				  
+				  
               </div>
             </div>
           </div>
@@ -213,52 +443,88 @@
             </div>
           </div>
         </div>
+		
+		
+		
+		
+		
       </div>
     </section>
-    <!-- Features Section End -->    
-
-    <!-- Portfolio Section -->
-    <section id="portfolios" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <div class="section-header">          
-          <h2 class="section-title">Empty Section</h2>
-          <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-        </div>
-        <div class="row">          
- 
-
-          <!-- Portfolio Recent Projects -->
-          <div id="portfolio" class="row">
-    
-   
-          </div>
-        </div>
-      </div>
-      <!-- Container Ends -->
-    </section>
-    <!-- Portfolio Section Ends --> 
+    <!-- Jobs Section End -->    
+	
 	
 	
 
-    <!-- This section is for the video introdustion if we do it -->
-    <section class="video-promo section">
+    <!-- Counter Section Start -->
+    <div class="counters section" data-stellar-background-ratio="0.5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-              <div class="video-promo-content text-center">
-                <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Le vidéo d'introduction (if we have one)</h2>
-                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus, id tincidunt nisi porta sit amet. Suspendisse et sapien varius, pellentesque dui non, semper orci.</p>
-                <a href="https://www.youtube.com/watch?v=IXoMDwh4Cq8" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
+        <div class="row"> 
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">   
+                         
+              <div class="fact-count">
+                <h3><span class="counter">207801</span></h3>
+                <h4>Jeunes Diplmés</h4>
               </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">   
+                         
+              <div class="fact-count">
+                <h3><span class="counter">4500</span></h3>
+                <h4>Jeunes Seront appelés</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item"> 
+                       
+              <div class="fact-count">
+                <h3><span class="counter">3000</span></h3>
+                <h4>Pariticipant à la Caravane</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item"> 
+                           
+              <div class="fact-count">
+                <h3><span class="counter">3300</span></h3>
+                <h4>Jeunes Intégés</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End intro vid -->
-
-
+    </div>
+    <!-- Counter Section End -->
+	
+	
+	
+	
+	    <!-- Entreprise Section Start -->
+    <div class="entreprise section" data-stellar-background-ratio="0.5">
+      <div class="container">
+     
+        
+		 <div class="section-header">          
+          <h2 class="section-title">Vous etes une entreprise qui recrute?</h2>
+          <hr class="lines">
+        </div>
+		
+		
+		<div class="row justify-content-center">
+                   <a  href="#" class="btn btn-common1 pos wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Fill The survey</a>
+        </div>
+		
+     
+    </div>
+	</div>
+    <!-- Entreprise Section End -->
+	
+	
+	
 
 
 
@@ -266,9 +532,8 @@
     <section id="team" class="section">
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title">partenaire</h2>
+          <h2 class="section-title">No Fondateur</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -344,9 +609,19 @@
 
 
 
-    <!-- testimonial Section Start -->
+    <!-- testimonial Section  -->
     <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
       <div class="container">
+	  
+	  
+	   <div class="section-header">          
+          <h2 style="color: #fff;" class="section-title">No Fondateur</h2>
+          <hr class="lines2">
+        </div>
+	  
+	  
+	  
+	  
         <div class="row justify-content-md-center">
           <div class="col-md-12">
 		 
@@ -355,21 +630,22 @@
               <div class="testimonial-item">
                
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-               
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> <h6> Asmaa 26 years , diplomé ... </h6></p> <br>
+				  
+    
                 </div>
               </div>
               <div class="testimonial-item">
                
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et <br> <h6> Omar 22 years , diplomé ... </h6></p>
                 
                 </div>
               </div>
               <div class="testimonial-item">
               
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et br> <h6> Karim 22 years , diplomé ... </h6></p>
                   
                 </div>
               </div>
@@ -385,16 +661,18 @@
         </div>        
       </div>
     </div>
-    <!-- testimonial Section Start -->
+    <!-- testimonial Section finql -->
+	
+	
+	
 
-    <!-- Blog Section -->
+    <!-- Conseils Section -->
     <section id="blog" class="section">
       <!-- Container Starts -->
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title">Blog</h2>
+          <h2 class="section-title">Conseils XIP</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
@@ -410,12 +688,12 @@
               
                 </div>
                 <h3>
-                  <a href="single-post.html">Lorem ipsum dolor sit amet</a>
+                  <a href="single-post.html">Video XIP en ligne</a>
                 </h3>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
                 </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <a href="single-post.html" style="text-decoration: underline;" class="btn-rm">Découvrir</a>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -434,12 +712,12 @@
                  
                 </div>
                 <h3>
-                  <a href="single-post.html">Lorem ipsum dolor sit amet</a>
+                  <a href="single-post.html">No conseils</a>
                 </h3>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
                 </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <a href="single-post.html" style="text-decoration: underline;" class="btn-rm">Découvrir</a>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -458,12 +736,12 @@
                   
                 </div> 
                 <h3>
-                  <a href="single-post.html">Lorem ipsum dolor sit amet</a>
+                  <a href="single-post.html">Articles à consulter</a>
                 </h3>
                 <p>
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
                 </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <a href="single-post.html" style="text-decoration: underline;" class="btn-rm">Découvrir</a>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
